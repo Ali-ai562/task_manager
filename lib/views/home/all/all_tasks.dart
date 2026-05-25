@@ -31,7 +31,7 @@ class AllTasks extends StatelessWidget {
 
     return ListView.separated(
       padding: EdgeInsets.zero,
-      separatorBuilder: (_, __) => const SizedBox(height: 10),
+      separatorBuilder: (_, _) => const SizedBox(height: 10),
       itemCount: tasks.length,
       itemBuilder: (context, index) {
         final task = tasks[index];

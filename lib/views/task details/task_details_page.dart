@@ -186,7 +186,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         border: Border.all(color: const Color(0xFF2A2A2A)),
                       ),
                       child: MyText(
-                        text: widget.task.description,
+                        text: widget.task.description.isNotEmpty
+                            ? widget.task.description
+                            : 'No description provided.',
                         // 'Design the full UI for the mobile app including all screens, components, and the design system documentation.',
                         color: const Color(0xFF888888),
                         size: 14,

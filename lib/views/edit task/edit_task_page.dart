@@ -152,6 +152,7 @@ class _EditTaskPageState extends State<EditTaskPage> {
 
                   //Fields
                   MyField(
+                     validator: AppConstants.commonValidator,
                     controller: _taskCtrl,
                     hint: 'What needs to be done?',
                     onTap: () {},
@@ -163,6 +164,7 @@ class _EditTaskPageState extends State<EditTaskPage> {
                     hint: 'e.g. 3',
                     label: 'DURATION (DAYS)',
                     onTap: () {},
+                     validator: AppConstants.commonValidator
                   ),
                   const SizedBox(height: 16),
                   MyField(
@@ -171,6 +173,7 @@ class _EditTaskPageState extends State<EditTaskPage> {
                     label: 'DATE',
                     onTap: () => _selectDate(context),
                     openBoard: true,
+                     validator: AppConstants.commonValidator
                   ),
                   const SizedBox(height: 16),
 
@@ -237,6 +240,7 @@ class _EditTaskPageState extends State<EditTaskPage> {
                     label: 'DESCRIPTION',
                     onTap: () {},
                     maxLines: 4,
+                    validator: AppConstants.commonValidator
                   ),
 
                   const SizedBox(height: 40),

@@ -113,6 +113,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                     hint: 'What needs to be done?',
                     onTap: () {},
                     label: 'TASK',
+                     validator: AppConstants.commonValidator
                   ),
                   const SizedBox(height: 16),
                   MyField(
@@ -120,6 +121,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                     hint: 'e.g. 3',
                     label: 'DURATION (DAYS)',
                     onTap: () {},
+                     validator: AppConstants.commonValidator
                   ),
                   const SizedBox(height: 16),
                   MyField(
@@ -129,6 +131,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                     onTap: () {
                       _selectDate(context);
                     },
+                     validator: AppConstants.commonValidator
                   ),
                   const SizedBox(height: 16),
 
@@ -195,6 +198,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                     label: 'DESCRIPTION',
                     onTap: () {},
                     maxLines: 4,
+                     validator: AppConstants.commonValidator
                   ),
 
                   const SizedBox(height: 40),

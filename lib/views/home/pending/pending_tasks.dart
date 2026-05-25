@@ -28,7 +28,7 @@ class PendingTasks extends StatelessWidget {
     }
     return ListView.separated(
       padding: EdgeInsets.zero,
-      separatorBuilder: (_, __) => const SizedBox(height: 10),
+      separatorBuilder: (_, _) => const SizedBox(height: 10),
       itemCount: tasks.length,
       itemBuilder: (context, index) {
         final task = tasks[index];
@@ -40,9 +40,9 @@ class PendingTasks extends StatelessWidget {
               PageRouteBuilder(
                 transitionDuration: const Duration(milliseconds: 400),
                 reverseTransitionDuration: const Duration(milliseconds: 400),
-                pageBuilder: (_, animation, __) =>
+                pageBuilder: (_, animation, _) =>
                     TaskDetailPage(task: task, taskIndex: index),
-                transitionsBuilder: (_, animation, __, child) {
+                transitionsBuilder: (_, animation, _, child) {
                   return SlideTransition(
                     position:
                         Tween(begin: const Offset(1.0, 0.0), end: Offset.zero)
